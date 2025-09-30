@@ -10,7 +10,7 @@ contact:
   - durrendal@lambdacreate.com
 name: espressif-esptool
 base: core24
-version: '5.1.0'
+version: v5.1.0
 summary: Serial utility for flashing, provisioning, and interacting with Espressif SoCs
 description: |
   A Python-based, open-source, platform-independent serial utility for flashing, 
@@ -36,7 +36,7 @@ parts:
     plugin: python
     source: https://github.com/espressif/esptool.git
     source-type: git
-    source-tag: v5.1.0
+    source-tag: $SNAPCRAFT_PROJECT_VERSION
     build-packages:
       - python3-dev
       - python3-pip
